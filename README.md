@@ -5,7 +5,8 @@ A complete, production-ready team task management application built with Node.js
 ## Live Demo
 
 Live Application:
-https://etharaai-fullstackdev-project-production.up.railway.app
+[https://etharaai-fullstackdev-project-production-0ce2.up.railway.app/](
+https://etharaai-fullstackdev-project-production-0ce2.up.railway.app/)
 
 📁 Project Assets (Demo Video + Screenshots):   
 [https://drive.google.com/drive/folders/1MYL6xguXJCMCwSZQoJKlZ0NO_-myqEox?usp=sharing](https://drive.google.com/drive/folders/1MYL6xguXJCMCwSZQoJKlZ0NO_-myqEox?usp=sharing)
