@@ -1,6 +1,14 @@
 # TaskFlow - Team Task Manager
 
-A complete, production-ready team task management application built with Node.js, Express, React, and MongoDB. Deploy instantly on Railway with zero configuration.
+A complete, production-ready team task management application built with Node.js, Express, React, and MongoDB. Successfully deployed on Railway with environment-based production configuration.
+
+## Live Demo
+
+Live Application:
+https://etharaai-fullstackdev-project-production.up.railway.app
+
+📁 Project Assets (Demo Video + Screenshots):   
+[https://drive.google.com/drive/folders/1MYL6xguXJCMCwSZQoJKlZ0NO_-myqEox?usp=sharing](https://drive.google.com/drive/folders/1MYL6xguXJCMCwSZQoJKlZ0NO_-myqEox?usp=sharing)
 
 ## Features
 
@@ -31,7 +39,7 @@ A complete, production-ready team task management application built with Node.js
 | **ORM** | Mongoose | 8.4.1 |
 | **Deployment** | Railway | - |
 
-## Local Development Setup (Ubuntu Linux)
+## Local Development Setup 
 
 ### Prerequisites
 
@@ -451,6 +459,20 @@ DEBUG=* npm run dev:server
 - Advanced filtering and search
 - Custom user avatars
 
+## Assignment Requirement Checklist
+
+✅ User Authentication (Signup/Login)
+✅ JWT Authentication
+✅ Project Creation & Team Management
+✅ Task Creation & Assignment
+✅ Task Status Tracking
+✅ Dashboard Analytics
+✅ Role-Based Access Control
+✅ REST APIs
+✅ MongoDB Database
+✅ Railway Deployment
+✅ Public Live URL
+
 ## Troubleshooting
 
 ### Build Fails on Railway
@@ -486,13 +508,15 @@ Clear browser cache/localStorage:
 
 ## License
 
-MIT License - Feel free to use this project for personal and commercial use.
+Apache License 2.0 - Free for personal and commercial use, modification, and distribution, provided you include the license/notice and note any changes.
 
-## Contributors
+## Author
 
-Built as a complete full-stack application template with production-ready deployment on Railway.
+Tarang Verma   
+B.Tech CSE (AI)  
+NIET Greater Noida   
 
 ---
 
-**Last Updated**: May 2024
+**Last Updated**: May 2026   
 **Status**: Production Ready ✅
