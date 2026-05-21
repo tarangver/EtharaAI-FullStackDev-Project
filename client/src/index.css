@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,27 +12,90 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc; /* bg-slate-50 */
+  color: #0f172a; /* text-slate-900 */
 }
 
+/* Premium custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f172a;
+  background: #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #475569;
-  border-radius: 4px;
+  background: #cbd5e1; /* slate-300 */
+  border: 1px solid #e2e8f0; /* slate-200 */
+  border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
+  background: #94a3b8; /* slate-400 */
 }
+
+/* Dark mode scrollbars */
+.dark ::-webkit-scrollbar-track {
+  background: #090d16; /* deep rich dark background */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b; /* slate-800 */
+  border: 1px solid #0f172a; /* slate-900 */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #334155; /* slate-700 */
+}
+
+@layer components {
+  /* Reusable Glassmorphism Card Style - Light premium edition */
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
+  }
+
+  .dark .glassmorphism {
+    background: rgba(9, 13, 22, 0.7); /* slate-950 inspired */
+    border: 1px solid rgba(30, 41, 59, 0.5); /* slate-800 inspired */
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Reusable Premium Buttons */
+  .btn-primary {
+    @apply relative overflow-hidden bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 transform active:scale-[0.98] shadow-lg shadow-indigo-600/10 hover:shadow-indigo-600/20 focus:ring-2 focus:ring-indigo-500/30 focus:outline-none disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-secondary {
+    @apply bg-white border border-slate-200 hover:bg-slate-50 hover:border-slate-300 text-slate-700 font-semibold px-6 py-3 rounded-xl transition-all duration-300 transform active:scale-[0.98] focus:ring-2 focus:ring-slate-200/50 focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-slate-800 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:border-slate-700 dark:focus:ring-slate-800/50;
+  }
+
+  /* Premium Form Input styling */
+  .premium-input-container {
+    @apply relative rounded-xl transition-all duration-300;
+  }
+
+  .premium-input {
+    @apply w-full pl-11 pr-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 transition-all duration-300 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-100 dark:placeholder-slate-500 dark:focus:border-indigo-500 dark:focus:ring-indigo-500/20;
+  }
+
+  /* Tech Grid Overlay */
+  .tech-grid-overlay {
+    background-image: linear-gradient(to right, #cbd5e1 1px, transparent 1px), linear-gradient(to bottom, #cbd5e1 1px, transparent 1px);
+  }
+  .dark .tech-grid-overlay {
+    background-image: linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px);
+  }
+}
+
